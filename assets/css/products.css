@@ -1,0 +1,168 @@
+body {
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body:after {
+    content: 'max';
+    display: none;
+}
+.content-division {
+    margin: auto;
+    max-width: 1600px;
+}
+/*/////////////////////////////////// NAVBAR ///////////////////////////////////*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.title-logo{
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+}
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-content a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 22px;
+}
+.nav-content a:hover {
+    color: #D2C7F0;
+    transition: 0.3s;
+}
+/*/////////////////////////////////// NAVBAR ///////////////////////////////////*/
+
+
+
+
+.colori {
+    color: #62666D;
+    text-decoration: none;
+    display: inline-block;
+    padding: 70px;
+}
+.a1 {
+    text-decoration: none;
+    padding: 50px;
+    color: #62666D;
+    font-size: 20px;
+}
+.weed {
+    width: 300px;
+}
+.back {
+    background-color: #F6F2FF;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 30px 30px 0px 0px ;
+}
+.size {
+    font-size: 40px;
+    letter-spacing: -0.1em;
+    line-height: 104.4%;
+}
+.sz {
+    font-size: 20px;
+    letter-spacing: -0.1em;
+    line-height: 1px;
+}
+#sp {
+    color: black;
+}
+#co {
+    color: #62666D;
+}
+#col {
+    color: rgba(98, 102, 109, 0.46);
+}
+#div2 a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    display: inline-block;
+}
+#div3 {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}   
+#div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div5 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#div6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 300px
+}
+@media only screen and (max-width:600px) {
+    body {
+        padding: 0%;
+    }
+    nav {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a1 {
+        padding: 10px 50px;
+    }
+    .back {
+        margin-top: 200px ;
+    }
+    #sp {
+        color: black;
+    }
+    #div4 {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 400px;
+        border-radius: 25px;
+        background-color: #F6F2FF;
+        position: relative;
+        left: 45px;
+        bottom: 300px;
+    }
+    #div5 {
+        flex-direction: column;
+        position: relative;
+        bottom: 400px;
+    }
+    #div6 {
+        flex-direction: column;
+    }
+    #div3 {
+        flex-direction: column;
+    }
+    #a1 {
+        display: inline-block;
+        position: relative;
+        right: 130px;
+        bottom: 80px;
+    }
+    #a2 {
+        display: inline-block;
+        position: relative;
+        left: 100px;
+        bottom: 245px;
+    }
+}

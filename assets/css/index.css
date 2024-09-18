@@ -1,0 +1,165 @@
+body {
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body:after {
+    content: 'max';
+    display: none;
+}
+.content-division {
+    margin: auto;
+    max-width: 1600px;
+}
+
+/*/////////////////////////////////// NAVBAR ///////////////////////////////////*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.title-logo{
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+}
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-content a {
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 22px;
+}
+.nav-content a:hover {
+    color: #D2C7F0;
+    transition: 0.3s;
+}
+/*////////////////////////////////// NAVBAR //////////////////////////////////*/
+
+
+/*/////////////////////////////////// HEADER ///////////////////////////////////*/
+.txt-info{
+    display: flex;
+    background-color: #D2C7F0;
+    width: 100%;
+}
+.txt-infos{
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+.info-h1{
+    font-size: 50px;
+}
+.txt-h5{
+    font-size: 20px;
+    color: #62666D;
+    margin: 20px 0 80px 0;
+}
+
+.Product-btn{
+    height: 40px;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.Product-btn:hover {
+    background-color: #D2C7F0;
+    border: 2px solid black;
+    color: black;
+    transition: 0.3s;
+}
+.Contact-btn{
+    display: inline-block;
+    width: 196px;
+    height: 40px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.Contact-btn:hover {
+    background-color: black;
+    color: black;
+    transition: 0.3s;
+    color: white;
+}
+
+.fotokryesore {
+    background-image: url(/assets/img/TeBoFurnituresFoto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 70%;
+    height: 550px;
+}
+/*/////////////////////////////////// HEADER ///////////////////////////////////*/
+
+
+/*/////////////////////////////////// FOOTER ///////////////////////////////////*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.footer-h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.1em;
+}
+.footer-span{
+    color: #D2C7F0;
+}
+.footer-info-txt{
+    line-height: 32px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.footer-txt{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-h4{
+    font-size: 17px;
+    color: #62666D;
+}
+/*/////////////////////////////////// FOOTER ///////////////////////////////////*/
+
+
+
+@media (max-width:600px) {
+    body {
+        padding: 0%;
+        overflow-x: hidden;
+    }
+    nav {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
