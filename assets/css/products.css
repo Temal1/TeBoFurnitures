@@ -15,6 +15,7 @@ body:after {
     margin: auto;
     max-width: 1600px;
 }
+
 /*/////////////////////////////////// NAVBAR ///////////////////////////////////*/
 nav {
     display: flex;
@@ -32,137 +33,312 @@ nav {
 .nav-content a {
     text-decoration: none;
     color: black;
-    padding: 30px;
     font-size: 22px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #D2C7F0;
 }
 .nav-content a:hover {
+    color: white;
+    box-shadow: 0 0 0.8em black;
+    transition: 0.3s;
+}
+.product{
+    margin: 30px;
+}
+/*////////////////////////////////// NAVBAR //////////////////////////////////*/
+
+
+/*////////////////////////////////// HEADER //////////////////////////////////*/
+.sell-prod-pop{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.header-color{
+    color: #62666D;
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-color:hover{
     color: #D2C7F0;
     transition: 0.3s;
 }
-/*/////////////////////////////////// NAVBAR ///////////////////////////////////*/
-
-
-
-
-.colori {
-    color: #62666D;
-    text-decoration: none;
-    display: inline-block;
-    padding: 70px;
+.sell{
+    margin: 0 40px 0 40px;
 }
-.a1 {
+/*////////////////////////////////// HEADER //////////////////////////////////*/
+
+
+/*////////////////////////////////// PROD LINKS //////////////////////////////////*/
+.links-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.all{
+    color: black;
+}
+.lnk-prod{
     text-decoration: none;
-    padding: 50px;
+    margin: 50px;
     color: #62666D;
     font-size: 20px;
 }
-.weed {
-    width: 300px;
+.lnk-prod:hover{
+    color: #D2C7F0;
+    transition: 0.3s;
 }
-.back {
-    background-color: #F6F2FF;
+/*////////////////////////////////// PROD LINKS //////////////////////////////////*/
+
+
+/*////////////////////////////////// PRODUCTS //////////////////////////////////*/
+.prod-some{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.some-prod{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 150px 0 50px 0;
+}
+
+.product-form{
+    background-color: #D2C7F0;
     width: 300px;
     height: 300px;
     padding: 30px;
     border-radius: 30px 30px 0px 0px ;
 }
-.size {
+
+.prod-size{
+    width: 300px;
+}
+.size-txt-prod{
     font-size: 40px;
-    letter-spacing: -0.1em;
-    line-height: 104.4%;
+    letter-spacing: -1px;
 }
-.sz {
+.sz-price-txt{
     font-size: 20px;
-    letter-spacing: -0.1em;
-    line-height: 1px;
+    letter-spacing: -1px;
+    line-height: 30px;
 }
-#sp {
-    color: black;
-}
-#co {
+#price-color {
     color: #62666D;
 }
-#col {
-    color: rgba(98, 102, 109, 0.46);
+#prodname-color {
+    color: #62666d75;
 }
-#div2 a {
-    text-decoration: none;
-    color: black;
-    padding: 30px;
-    display: inline-block;
-}
-#div3 {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-}   
-#div4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#div5 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-#div6 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 300px
-}
-@media only screen and (max-width:600px) {
-    body {
-        padding: 0%;
+/*////////////////////////////////// PRODUCTS //////////////////////////////////*/
+
+@media (max-width: 560px) {
+    .nav-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0 10px 0;
     }
+    .product {
+        margin: 15px;
+    }
+
+
+    .sell-prod-pop{
+        display: flex;
+        flex-direction: column;
+    }
+    .res-marg{
+        margin: 10px;
+    }
+
+
+    .links-products{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+    }
+    .lnk-prod{
+        margin: 10px;
+    }
+
+
+    .prod-some{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .some-prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .product-form{
+        padding: 0;
+        margin: 60px;
+    }
+    .prod-size{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .size-txt-prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin: 10px;
+    }
+    .sz-price-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prod-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .a1 {
-        padding: 10px 50px;
-    }
-    .back {
-        margin-top: 200px ;
-    }
-    #sp {
-        color: black;
-    }
-    #div4 {
+
+
+    .sell-prod-pop{
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 400px;
-        border-radius: 25px;
-        background-color: #F6F2FF;
-        position: relative;
-        left: 45px;
-        bottom: 300px;
+        justify-content: center;
+        align-items: center;
     }
-    #div5 {
+
+
+    .links-products{
+        display: flex;
         flex-direction: column;
-        position: relative;
-        bottom: 400px;
+        margin: 50px 0 0 0;
     }
-    #div6 {
+    .lnk-prod{
+        margin: 10px;
+    }
+
+
+    .prod-some{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
-    #div3 {
+    .some-prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .product-form{
+        padding: 0;
+        margin: 60px;
+    }
+    .prod-size{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .size-txt-prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin: 10px;
+    }
+    .sz-price-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prod-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 769px ) and (max-width: 1224px){
+    .prod-some{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
-    #a1 {
-        display: inline-block;
-        position: relative;
-        right: 130px;
-        bottom: 80px;
+    .some-prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
     }
-    #a2 {
-        display: inline-block;
-        position: relative;
-        left: 100px;
-        bottom: 245px;
+    .product-form{
+        padding: 0;
+        margin: 60px;
+    }
+    .prod-size{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .size-txt-prod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        margin: 10px;
+    }
+    .sz-price-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .prod-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 769px ) and (max-width: 1600px){
+    nav{
+        margin:0 50px 0 50px;
+    }
+
+    .sell-prod-pop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .links-products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

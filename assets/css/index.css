@@ -33,12 +33,19 @@ nav {
 .nav-content a {
     text-decoration: none;
     color: black;
-    padding: 30px;
     font-size: 22px;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #D2C7F0;
 }
 .nav-content a:hover {
-    color: #D2C7F0;
+    color: white;
+    box-shadow: 0 0 0.8em black;
     transition: 0.3s;
+}
+.product{
+    margin: 30px;
 }
 /*////////////////////////////////// NAVBAR //////////////////////////////////*/
 
@@ -57,10 +64,10 @@ nav {
     width: 40%;
 }
 .info-h1{
-    font-size: 50px;
+    font-size: 45px;
 }
 .txt-h5{
-    font-size: 20px;
+    font-size: 18px;
     color: #62666D;
     margin: 20px 0 80px 0;
 }
@@ -69,22 +76,24 @@ nav {
     height: 40px;
     width: 200px;
     text-decoration: none;
-    color: white;
+    color: #D2C7F0;
     background-color: black;
     border: 2px solid black;
     font-size: 30px;
     display: inline-block;
     text-align: center;
+    border-radius: 5px;
 }
 .Product-btn:hover {
     background-color: #D2C7F0;
     border: 2px solid black;
     color: black;
     transition: 0.3s;
+    border-radius: 5px;
 }
 .Contact-btn{
     display: inline-block;
-    width: 196px;
+    width: 200px;
     height: 40px;
     border: 2px solid black;
     text-decoration: none;
@@ -92,12 +101,13 @@ nav {
     text-align: center;
     font-size: 30px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 .Contact-btn:hover {
     background-color: black;
-    color: black;
     transition: 0.3s;
-    color: white;
+    color: #D2C7F0;
+    border-radius: 5px;
 }
 
 .fotokryesore {
@@ -123,10 +133,7 @@ footer {
     font-weight: bold;
     font-size: 80px;
     line-height: 80px;
-    letter-spacing: -0.1em;
-}
-.footer-span{
-    color: #D2C7F0;
+    letter-spacing: -7px;
 }
 .footer-info-txt{
     line-height: 32px;
@@ -150,11 +157,31 @@ footer {
 
 
 
-@media (max-width:600px) {
-    body {
-        padding: 0%;
-        overflow-x: hidden;
+@media (max-width: 560px) {
+    .nav-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0 10px 0;
     }
+    .product {
+        margin: 15px;
+    }
+    .Prod-Con-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Contact-btn{
+        margin: 15px 0 0 0;
+    }
+    .footer-h1{
+        font-size: 70px;
+    }
+}
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         display: flex;
@@ -162,4 +189,90 @@ footer {
         align-items: center;
     }
     
+    .txt-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .txt-infos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 70px 0 70px 0;
+    }
+    .info-h1{
+        text-align: center;
+    }
+    .txt-h5{
+        margin: 20px;
+        text-align: center  ;
+    }
+    .fotokryesore{
+        width: 100%;
+        height: 400px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .footer-txt{
+        width: 100%;
+        margin: 20px 0 50px 0;
+        text-align: center;
+    }
+}
+@media (min-width: 769px ) and (max-width: 1024px){
+    .txt-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .txt-infos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 70px 0 70px 0;
+    }
+    .info-h1{
+        text-align: center;
+    }
+    .txt-h5{
+        margin: 20px;
+        text-align: center  ;
+    }
+    .fotokryesore{
+        width: 100%;
+        height: 400px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+    .footer-txt{
+        width: 100%;
+        margin: 20px 0 50px 0;
+        text-align: center;
+    }
+}
+@media (min-width: 769px ) and (max-width: 1600px){
+    nav{
+        margin:0 50px 0 50px;
+    }
+}
+@media (min-width: 769px ) and (max-width: 1300px){
+    .Contact-btn{
+        margin: 10px 0 0 0;
+    }
 }

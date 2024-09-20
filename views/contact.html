@@ -4,41 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./contact.css">
+    <title>TeBo Furniture</title>
+    <link rel="shortcut icon" href="/assets/img/titlelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="content-division">
     <nav>
-        <div id="div1">
-            <h1 id="qw">A L E A</h1>
-            <p id="p1">F u r n i t u r e</p>
+        <div class="title-logo">
+            <h1>T E B O</h1>
+            <p>F u r n i t u r e</p>
         </div>
-        <div id="div2">
-            <a href="home.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
+        <div class="nav-content">
+            <a href="/index.html">Hyrja</a>
+            <a href="/views/products.html" class="product">Produktet</a>
+            <a href="/views/contact.html">Na Kontakto</a>
         </div>
     </nav>
-    <div id="div3">
-        <h1>Contact</h1>
-    </div>
-    <div>
-        <img src="../images/Rectangle 17.png" alt="">
-    </div>
-<div id="div4">
-    <div id="name">
-        <input type="text" placeholder="Your name">
-    </div>
-    <div id="email">
-        <input type="email" placeholder="Your Email">
-    </div>
-    <div id="phone">
-        <input type="text" placeholder="Your Phone">
-    </div>
-    <div id="mage">
-        <input type="text" placeholder="Your Message">
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Na Kontakto</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="f35e6b23-5a7f-4635-9f5c-65f32e2b2d94">
+            <input type="text" name="name" placeholder="Emri" class="contact-inputs" required>
+            <input type="text" name="name" placeholder="Mbiemri" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Emaili" class="contact-inputs" required>
+            <input type="tel" name="tel" placeholder="Nr.Telefonit (0## ### ###)" class="contact-inputs" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+            <!-- <small>Forma: 0** *** ***</small> -->
+            <textarea name="message" placeholder="Mesazhi juaj" class="contact-inputs" required></textarea>
+            <button type="submit">Dërgo</button>
+        </form>
+        <div class="contact-right">
+            <img src="/assets/img/img-contact.png" alt="">
+        </div>
     </div>
 </div>
 </body>
