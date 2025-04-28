@@ -4,95 +4,591 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeBo Furniture</title>
+    <title>Products - TeBo Furniture</title>
     <link rel="shortcut icon" href="/assets/img/titlelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/products.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="content-division">
-    <nav>
-        <div class="title-logo">
-            <h1>T E B O</h1>
-            <p>F u r n i t u r e</p>
-        </div>
-        <div class="nav-content">
-            <a href="/index.html">Hyrja</a>
-            <a href="/views/products.html" class="product">Produktet</a>
-            <a href="/views/contact.html">Na Kontakto</a>
-        </div>
-    </nav>
+        <header>
+            <nav class="premium-nav">
+                <div class="title-logo">
+                    <h1>TEBO</h1>
+                    <p>PREMIUM FURNITURE</p>
+                </div>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-content">
+                    <a href="/index.html">Hyrja</a>
+                    <a href="/views/products.html" class="active">Produktet</a>
+                    <a href="/views/contact.html">Na Kontakto</a>
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </nav>
+        </header>
 
-    
-    <header class="sell-prod-pop">
-        <h1 class="res-marg">Produktet</h1>
-        <a class="header-color sell res-marg" href="/views/prodsellsknown/ishituri.html">Më i shituri</a>
-        <a class="header-color popular res-marg" href="/views/prodsellsknown/injohuri.html">Më të njohurit</a>
-    </header>
+        <!-- Hero Section -->
+        <section class="product-hero">
+            <div class="product-hero-content">
+                <h1>Our Premium Collection</h1>
+                <p>Discover furniture that combines elegance, comfort, and functionality</p>
+            </div>
+        </section>
 
-    <div class="links-products">
-        <a class="all lnk-prod" href="#"><span class="all">All</span></a>
-        <a class="bed lnk-prod" href="/views/productsasset/bed.html">Bed</a>
-        <a class="sofa lnk-prod" href="/views/productsasset/sofa.html">Sofa</a>
-        <a class="chair lnk-prod" href="/views/productsasset/chair.html">Chair</a>
-        <a class="light lnk-prod" href="/views/productsasset/light.html">Light</a>
-    </div>
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="separator"><i class="fas fa-angle-right"></i></li>
+                    <li>Products</li>
+                </ul>
+            </div>
+        </div>
 
-<div class="products">
-    <div class="prod-some">
-        <div class="product-form">
-            <h1 class="size-txt-prod">Vintage Chair</h1>
-            <h5 class="sz-price-txt" id="price-color">120€</h5>
-            <h6 class="sz-price-txt" id="prodname-color">Chair</h6>
-            <div class="prod-img">
-                <img class="prod-size first-prod" src="/assets/img/vintagechair.png" alt="">
+        <!-- Featured Categories -->
+        <div class="product-categories">
+            <div class="container">
+                <div class="category-links">
+                    <a href="#" class="category-link active">All Products</a>
+                    <a href="/views/productsasset/bed.html" class="category-link">Bedroom</a>
+                    <a href="/views/productsasset/sofa.html" class="category-link">Sofa</a>
+                    <a href="/views/productsasset/chair.html" class="category-link">Chair</a>
+                    <a href="/views/productsasset/light.html" class="category-link">Lighting</a>
+                    <a href="/views/productsasset/decor.html" class="category-link">Decor</a>
+                </div>
+                
+                <div class="featured-links">
+                    <a href="/views/prodsellsknown/ishituri.html" class="featured-link">
+                        <i class="fas fa-star"></i> Best Sellers
+                    </a>
+                    <a href="/views/prodsellsknown/injohuri.html" class="featured-link">
+                        <i class="fas fa-fire"></i> Popular Items
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="product-form">
-            <h1 class="size-txt-prod">Closetto</h1>
-            <h5 class="sz-price-txt" id="price-color">220€</h5>
-            <h6 class="sz-price-txt" id="prodname-color">Closet</h6>
-            <div class="prod-img">
-                <img class="prod-size" src="/assets/img/closetto.png" alt="">
+
+        <!-- Filter and Sort -->
+        <div class="filter-sort-container">
+            <div class="container">
+                <div class="filter-sort-wrapper">
+                    <div class="filter-toggle">
+                        <button id="filter-btn">
+                            <i class="fas fa-filter"></i> Filter
+                        </button>
+                    </div>
+                    <div class="sort-options">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                    <div class="view-options">
+                        <button class="view-btn grid-view active">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn list-view">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="product-form">
-            <h1 class="size-txt-prod">Dresser</h1>
-            <h5 class="sz-price-txt" id="price-color">130€</h5>
-            <h6 class="sz-price-txt" id="prodname-color">Dresser</h6>
-            <div class="prod-img">
-                <img class="prod-size" src="/assets/img/dresser.png" alt="">
+
+        <!-- Filter Panel (Hidden by default on mobile) -->
+        <div class="filter-panel" id="filter-panel">
+            <div class="container">
+                <div class="filter-header">
+                    <h4>Filters</h4>
+                    <button class="close-filter">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="filter-groups">
+                    <div class="filter-group">
+                        <h5>Price Range</h5>
+                        <div class="price-slider">
+                            <input type="range" min="0" max="1000" value="1000" id="price-range">
+                            <div class="price-range-values">
+                                <span>€0</span>
+                                <span id="price-value">€1000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h5>Material</h5>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox"> Wood
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox"> Fabric
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox"> Metal
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox"> Glass
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h5>Color</h5>
+                        <div class="color-options">
+                            <label class="color-option" style="background-color: #000000;">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="color-option" style="background-color: #ffffff; border: 1px solid #ddd;">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="color-option" style="background-color: #964B00;">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="color-option" style="background-color: #D2C7F0;">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="color-option" style="background-color: #808080;">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-actions">
+                        <button class="apply-filter-btn">Apply Filters</button>
+                        <button class="reset-filter-btn">Reset</button>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-product-id="vintage-chair-001">
+                        <div class="product-badge">New</div>
+                        <div class="product-image">
+                            <img src="/assets/img/vintagechair.png" alt="Vintage Chair">
+                            <div class="product-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Vintage Chair</h3>
+                            <div class="product-category">Chair</div>
+                            <div class="product-price">
+                                <span class="current-price">€120</span>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-product-id="closetto-002">
+                        <div class="product-image">
+                            <img src="/assets/img/closetto.png" alt="Closetto">
+                            <div class="product-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Closetto</h3>
+                            <div class="product-category">Closet</div>
+                            <div class="product-price">
+                                <span class="current-price">€220</span>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(18)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-product-id="dresser-003">
+                        <div class="product-image">
+                            <img src="/assets/img/dresser.png" alt="Dresser">
+                            <div class="product-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Dresser</h3>
+                            <div class="product-category">Dresser</div>
+                            <div class="product-price">
+                                <span class="current-price">€130</span>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(9)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-product-id="georgian-rug-004">
+                        <div class="product-badge sale">-15%</div>
+                        <div class="product-image">
+                            <img src="/assets/img/carpetgeorgian.png" alt="Georgian Rug">
+                            <div class="product-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Georgian</h3>
+                            <div class="product-category">Rug</div>
+                            <div class="product-price">
+                                <span class="current-price">€70</span>
+                                <span class="original-price">€82</span>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(24)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-product-id="symphonic-curtains-005">
+                        <div class="product-image">
+                            <img src="/assets/img/symphonic.png" alt="Symphonic Curtains">
+                            <div class="product-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Symphonic</h3>
+                            <div class="product-category">Curtains</div>
+                            <div class="product-price">
+                                <span class="current-price">€40</span>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(7)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-product-id="luxury-sofa-006">
+                        <div class="product-badge">Popular</div>
+                        <div class="product-image">
+                            <img src="/assets/img/luxurysofa.png" alt="Luxury Sofa">
+                            <div class="product-overlay">
+                                <div class="overlay-buttons">
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn add-to-cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                    <a href="#" class="overlay-btn">
+                                        <i class="fas fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Luxury</h3>
+                            <div class="product-category">Sofa</div>
+                            <div class="product-price">
+                                <span class="current-price">€400</span>
+                            </div>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(32)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <span class="page-dots">...</span>
+                    <a href="#" class="page-next">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="newsletter-container">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest updates on new products and special discounts</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="premium-footer">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>TEBO</h2>
+                    <p>PREMIUM FURNITURE</p>
+                    <p class="footer-description">Crafting premium furniture that combines elegant design with exceptional comfort and functionality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Living Room</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Bedroom</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Dining Room</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Office</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Accessories</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping & Returns</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Store Policy</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Payment Methods</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Sustainability</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Press</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 TeBo Furnitures. All rights reserved.</p>
+                <div class="payment-methods">
+                    <img src="/assets/img/payment/visa.png" alt="Visa" width="40" height="25">
+                    <img src="/assets/img/payment/mastercard.png" alt="Mastercard" width="40" height="25">
+                    <img src="/assets/img/payment/paypal.png" alt="PayPal" width="40" height="25">
+                    <img src="/assets/img/payment/amex.png" alt="American Express" width="40" height="25">
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <!-- Cart Modal -->
+        <div class="cart-modal">
+            <div class="cart-modal-content">
+                <div class="cart-header">
+                    <h3>Your Shopping Cart</h3>
+                    <button class="close-cart"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <a href="/views/products.html" class="shop-now-btn">Shop Now</a>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span class="total-amount">€0.00</span>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="clear-cart">Clear Cart</button>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Cart Overlay -->
+        <div class="cart-overlay"></div>
+
+        <!-- JavaScript -->
+        <script>
+            // Price Range Slider
+            const priceRange = document.getElementById('price-range');
+            const priceValue = document.getElementById('price-value');
+            
+            if (priceRange && priceValue) {
+                priceRange.addEventListener('input', function() {
+                    priceValue.textContent = '€' + this.value;
+                });
+            }
+            
+            // Filter Panel Toggle
+            const filterBtn = document.getElementById('filter-btn');
+            const filterPanel = document.getElementById('filter-panel');
+            const closeFilter = document.querySelector('.close-filter');
+            
+            if (filterBtn && filterPanel && closeFilter) {
+                filterBtn.addEventListener('click', function() {
+                    filterPanel.classList.toggle('show');
+                });
+                
+                closeFilter.addEventListener('click', function() {
+                    filterPanel.classList.remove('show');
+                });
+            }
+            
+            // View Toggling (Grid/List)
+            const gridViewBtn = document.querySelector('.grid-view');
+            const listViewBtn = document.querySelector('.list-view');
+            const productsGrid = document.querySelector('.products-grid');
+            
+            if (gridViewBtn && listViewBtn && productsGrid) {
+                gridViewBtn.addEventListener('click', function() {
+                    gridViewBtn.classList.add('active');
+                    listViewBtn.classList.remove('active');
+                    productsGrid.classList.remove('list-view');
+                });
+                
+                listViewBtn.addEventListener('click', function() {
+                    listViewBtn.classList.add('active');
+                    gridViewBtn.classList.remove('active');
+                    productsGrid.classList.add('list-view');
+                });
+            }
+            
+            // Back to Top Functionality
+            const backToTopBtn = document.querySelector('.back-to-top');
+            
+            if (backToTopBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        backToTopBtn.classList.add('visible');
+                    } else {
+                        backToTopBtn.classList.remove('visible');
+                    }
+                });
+                
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        </script>
+        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/cart.js"></script>
     </div>
-    <div class="some-prod">
-        <div class="product-form">
-            <h1 class="size-txt-prod">Georgian</h1>
-            <h5 class="sz-price-txt" id="price-color">70€</h5>
-            <h6 class="sz-price-txt" id="prodname-color">Rug</h6>
-            <div class="prod-img">
-                <img class="prod-size" src="/assets/img/carpetgeorgian.png" alt="">
-            </div>
-        </div>
-        <div class="product-form">
-            <h1 class="size-txt-prod">Symphonic</h1>
-            <h5 class="sz-price-txt" id="price-color">40€</h5>
-            <h6 class="sz-price-txt" id="prodname-color">Curtains</h6>
-            <div class="prod-img">
-                <img class="prod-size" src="/assets/img/symphonic.png" alt="">
-            </div>
-        </div>
-        <div class="product-form">
-            <h1 class="size-txt-prod">Luxury</h1>
-            <h5 class="sz-price-txt" id="price-color">400€</h5>
-            <h6 class="sz-price-txt" id="prodname-color">Sofa</h6>
-            <div class="prod-img">
-                <img class="prod-size" src="/assets/img/luxurysofa.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-</div>
 </body>
 </html>

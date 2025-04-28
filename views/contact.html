@@ -4,45 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeBo Furniture</title>
+    <title>Contact Us - TeBo Furniture</title>
     <link rel="shortcut icon" href="/assets/img/titlelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/contact.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<div class="content-division">
-    <nav>
-        <div class="title-logo">
-            <h1>T E B O</h1>
-            <p>F u r n i t u r e</p>
-        </div>
-        <div class="nav-content">
-            <a href="/index.html">Hyrja</a>
-            <a href="/views/products.html" class="product">Produktet</a>
-            <a href="/views/contact.html">Na Kontakto</a>
-        </div>
-    </nav>
+    <div class="content-division">
+        <!-- Header with Fixed Navbar -->
+        <header>
+            <nav class="premium-nav">
+                <div class="title-logo">
+                    <h1>T E B O</h1>
+                    <p>F u r n i t u r e</p>
+                </div>
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-content">
+                    <a href="/index.html">Hyrja</a>
+                    <a href="/views/products.html">Produktet</a>
+                    <a href="/views/contact.html" class="active">Na Kontakto</a>
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </nav>
+        </header>
 
-    <div class="contact-container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-            <div class="contact-left-title">
-                <h2>Na Kontakto</h2>
-                <hr>
+        <!-- Contact Form Section -->
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Na Kontakto</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="f35e6b23-5a7f-4635-9f5c-65f32e2b2d94">
+                <input type="text" name="name" placeholder="Emri" class="contact-inputs" required>
+                <input type="text" name="name" placeholder="Mbiemri" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Emaili" class="contact-inputs" required>
+                <input type="tel" name="tel" placeholder="Nr.Telefonit (0## ### ###)" class="contact-inputs" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+                <!-- <small>Forma: 0** *** ***</small> -->
+                <textarea name="message" placeholder="Mesazhi juaj" class="contact-inputs" required></textarea>
+                <button type="submit">Dërgo</button>
+            </form>
+            <div class="contact-right">
+                <img src="/assets/img/img-contact.png" alt="">
             </div>
-            <input type="hidden" name="access_key" value="f35e6b23-5a7f-4635-9f5c-65f32e2b2d94">
-            <input type="text" name="name" placeholder="Emri" class="contact-inputs" required>
-            <input type="text" name="name" placeholder="Mbiemri" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Emaili" class="contact-inputs" required>
-            <input type="tel" name="tel" placeholder="Nr.Telefonit (0## ### ###)" class="contact-inputs" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
-            <!-- <small>Forma: 0** *** ***</small> -->
-            <textarea name="message" placeholder="Mesazhi juaj" class="contact-inputs" required></textarea>
-            <button type="submit">Dërgo</button>
-        </form>
-        <div class="contact-right">
-            <img src="/assets/img/img-contact.png" alt="">
+        </div>
+
+        <!-- Footer -->
+        <footer class="premium-footer">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>T E B O</h2>
+                    <p>F u r n i t u r e</p>
+                    <p class="footer-description">Crafting premium furniture that combines elegant design with exceptional comfort and functionality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Living Room</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Bedroom</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Dining Room</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Office</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Accessories</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping & Returns</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Store Policy</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Payment Methods</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Sustainability</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Press</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 TeBo Furnitures. All rights reserved.</p>
+                <div class="payment-methods">
+                    <img src="/assets/img/payment/visa.png" alt="Visa" width="40" height="25">
+                    <img src="/assets/img/payment/mastercard.png" alt="Mastercard" width="40" height="25">
+                    <img src="/assets/img/payment/paypal.png" alt="PayPal" width="40" height="25">
+                    <img src="/assets/img/payment/amex.png" alt="American Express" width="40" height="25">
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
         </div>
     </div>
-</div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h3>Your Shopping Cart</h3>
+                <button class="close-cart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-empty">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="/views/products.html" class="shop-now-btn">Shop Now</a>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">€0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="clear-cart">Clear Cart</button>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Overlay -->
+    <div class="cart-overlay"></div>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/cart.js"></script>
+
+    <!-- Back to Top Script -->
+    <script>
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        if (backToTopBtn) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
 </body>
 </html>
